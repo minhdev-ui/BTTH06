@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Random Array</title>
+    <link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="form_heading">
+                <h1 class="form_heading-title">
+                    Thao tác trên mảng
+                </h1>
+            </div>
+            <div class="form_content">
+                <div class="create_array">
+                    <div class="create_array_btn">
+                        <button id="create_btn">Tạo mảng</button>
+                    </div>
+                    <div class="create_array_value">
+                        <p class="array_value"></p>
+                    </div>
+                </div>
+                <div class="modified_array">
+                    <p class="modified_array_value">Giá trị sau khi xử lý</p>
+                </div>
+                <div class="sort_array">
+                    <div class="sort_increase_array">
+                        <input type="radio" name="sort" id="increase">
+                        <label for="">Sắp xếp tăng</label>
+                    </div>
+                    <div class="sort_decrease_array">
+                        <input type="radio" name="sort" id="decrease">
+                        <label for="">Sắp xếp giảm</label>
+                    </div>
+                </div>
+                <div class="add_array">
+                    <div class="add_array_pos">
+                        <label for="">Thêm vào vị trí</label>
+                        <input type="text" id="pos">
+                    </div>
+                    <div class="add_array_val">
+                        <label for="">Giá trị</label>
+                        <input type="text" id="val">
+                    </div>
+                    <button id="add_btn">Thêm</button>
+                </div>
+            </div>
+        </div>
+        <div class="clock">
+            <div class="time">
+                <h1 class="time_counter"></h1>
+            </div>
+            <div class="greeting">
+                <p class="greeting_sentence"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./asset/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+
+.form_heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.create_array {
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.create_array_btn{
+    padding: 10px 20px;
+    border-right: 1px solid #ccc;
+}
+
+.create_array_btn button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.create_array_value {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.modified_array {
+    padding: 15px 5px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.sort_array {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.sort_increase_array {
+    padding: 0 10px;
+}
+
+.add_array {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.add_array_pos {
+    margin-right: 10px;
+}
+
+#add_btn {
+    padding: 2px 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.clock {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(30deg,#ccc, #fff);
+}
+
+.time {
+    padding: 10px 20px;
+}
+
+.time_counter {
+    box-shadow: 4px 6px 5px 0px #ccc;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+.greeting_sentence {
+    color: red;
+    font-weight: 600;
+    box-shadow: 4px 0px 20px 0px #ccc;
+}
