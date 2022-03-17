@@ -52,17 +52,19 @@ const showGreeting = (hour) => {
     return text
 }
 
+const checkTime = (i) => i < 10 ? '0' + i : i
+
 const counterTime = () => {
     setInterval(() => {
         let time
         const d = new Date()
-        let h = d.getHours() < 10 ? '0' + d.getHours() : d.getHours()
+        let h = checkTime(d.getHours())
         showGreeting(h) !== greeting.textContent ? greeting.textContent = showGreeting(h) : greeting.textContent = greeting.textContent
-        let m = d.getMinutes() < 10 ? '0' + d.getMinutes() : d.getMinutes()
-        let s = d.getSeconds() < 10 ? '0' + d.getSeconds() : d.getSeconds()
+        let m = checkTime(d.getMinutes())
+        let s = checkTime(d.getSeconds())
         time = h + ':' + m + ':' + s
         timer.textContent = time
     }, 1000)
 }
 
-counterTime();
+counterTime()
