@@ -35,30 +35,34 @@ addBtn.onclick = () => {
     modifiedValue.innerHTML = [...array]
 }
 
-// Time Clock
+// Time O'Clock
+
 const timer = document.querySelector('.time_counter')
 const greeting = document.querySelector('.greeting_sentence')
 
 const showGreeting = (hour) => {
+    let text;
     if(hour >= 0 && hour < 12) {
-        greeting.textContent = 'Chào Buổi Sáng'
+        text = 'Chào Buổi Sáng'
     }else if (hour < 17){
-        greeting.textContent = 'Chào Buổi Chiều'
+        text = 'Chào Buổi Chiều'
     }else{
-        greeting.textContent = 'Chào Buổi Tối'
+        text = 'Chào Buổi Tối'
     }
+    return text
 }
 
 const counterTime = () => {
     setInterval(() => {
-        let time;
+        let time
         const d = new Date()
-        let h = d.getHours() < 10 ? '0' + d.getHours() : d.getHours();
-        showGreeting(h)
-        let m = d.getMinutes() < 10 ? '0' + d.getMinutes() : d.getMinutes();
-        let s = d.getSeconds() < 10 ? '0' + d.getSeconds() : d.getSeconds();
-        time = h + ':' + m + ':' + s;
+        let h = d.getHours() < 10 ? '0' + d.getHours() : d.getHours()
+        showGreeting(h) !== greeting.textContent ? greeting.textContent = showGreeting(h) : greeting.textContent = greeting.textContent
+        let m = d.getMinutes() < 10 ? '0' + d.getMinutes() : d.getMinutes()
+        let s = d.getSeconds() < 10 ? '0' + d.getSeconds() : d.getSeconds()
+        time = h + ':' + m + ':' + s
         timer.textContent = time
     }, 1000)
 }
-counterTime()
+
+counterTime();
